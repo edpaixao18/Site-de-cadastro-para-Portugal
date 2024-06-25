@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="Utf-8">
+            <meta name="viewport" content="width=device-width", initial-scale="1.0">
+            <title> Login/Registro</title>
+            <link rel="stylesheet" href="styles.css">
+    
+    </head>
+    <body> 
+            <div class="container">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2 id="login-title">Login</h2>
+                        <h2 id="register-title" style="display: none;">Registro</h2>
+                    
+            </div>
+            <form id="login-form">
+                    <input type="text" placeholder="Usuário" required>
+                    <input type="password" placeholder="Senha" required>
+                <button type="submit">Login</button>
+                <p class="toggle-form">Ainda não tem uma conta?<br> <a href="#"id="show-register">Registrar</a></p>
+            </form>
+            
+            <form id="register-form" style="display: none;">
+                    <input type="text" placeholder="Nome completo" required>
+                    <input type="email"  placeholder="email" required>
+                    <input type="date" placeholder="Data de nascimento">
+                    <input type="text" placeholder="NIF" required>
+                    <input type="text" placeholder="Endereço completo">
+                    <input type="tel" placeholder="Código Postal">
+                <button type="submit">Registrar</button>
+                <p class="toggle-form">Já tem uma conta? <a href="#" id="show-login">Login</a></p>
+            </form>
+             </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
